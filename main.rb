@@ -12,7 +12,7 @@ class Array
 
   def split
     mid = length / 2
-    [self[0..mid - 1], self[mid..-1]]
+    [self[0...mid], self[mid..-1]]
   end
 
   def merge(left, right)
@@ -28,5 +28,5 @@ class Array
   end
 end
 
-p array = Array.new(10) { rand(100) }
+p array = Array.new(11) { rand(100) }
 p array.merge_sort
